@@ -13,8 +13,8 @@ public class RegisterPageTests extends TestBase {
 				{"male" , "Ahmed" , "sedky" , "" , "1233456789" , "1233456789" , "Email is required"}, //email field empty
 				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "" , "1233456789" , "The password and confirmation password do not match."}, //password field empty
 				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "1233456789" , "" , "Password is required"}, //confirmPassword field empty
-				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "1233456789" , "456978" , "The password and confirmation password do not match."}, //confirmPassword field empty
-				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "123" , "123" , "must have at least 6 characters"} //confirmPassword field empty
+				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "1233456789" , "456978" , "The password and confirmation password do not match."}, //mismatch Between password field and confrim password field
+				{"male" , "Ahmed" , "sedky" , "Ahmed@gmail.com" , "123" , "123" , "must have at least 6 characters"} //weak Password
 			};
 		}
 	@Test (priority = 2 , dataProvider = "invalidRegisterScenarios")
